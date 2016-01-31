@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <title>Geovent</title>
+    <link href="https://preview.c9users.io/tzvetan/geovent/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js" ></script>
+    <script id="tmp-event-row" type="text/x-jQuery-tmpl">
+    <div class='row' style='margin:2px'>
+        <div class='col-md-1'>
+            <a href='${url}' target='_blank'> 
+              <img class='ev-logo' src='${logo}' width='60px' height="60px" />
+            </a>
+        </div>
+        <div class='col-md-11'>
+         <p>
+           ${name}
+         </p>
+         <span>
+           ${desc}
+         </span>
+        </div>
+    </div>
+    </script>
+  </head>
+  <body> 
+    <h1> <img src="https://preview.c9users.io/tzvetan/geovent/Logo.png" class="logo"><span class="logo-text">eovent</span> </h1>
+
+    <section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url('http://www.eventbrowse.com/wp-content/uploads/2014/12/New-York-City-Skyline.jpg'); 
+background-position-y:-300px;">
+          <div class="container">
+            <div class="row mid-panel">
+              <div class="col-md-12">
+
+                  <h1 class="text-center">Find any event on Geovent!</h1>
+                <form class='form-inline text-center'>
+<div class='form-group'>
+  <input type= "text" class='form-control' id='txtKW' placeholder="Keywords (fashion)"> 
+  <input type='text' class='form-control' id='txtLoc'placeholder="Location (new york)">
+  <input type='button' class='btn btn-success' value='search'  onClick="onSearchClick()" "timezone": "America/New_York",>
+</div>
+</form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+<div class='row' id='eventContainer' form class='form-inline text-center'></div>
+ 
+ 
+  <script type="text/javascript" src="https://preview.c9users.io/tzvetan/geovent/geoevent.js"></script>
+  </body>
+</html>
+  
+ 
+  
+  
